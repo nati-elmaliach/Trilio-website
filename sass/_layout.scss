@@ -1,0 +1,39 @@
+.container{
+    max-width: 120rem;//1200px
+    /* center this container  */
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-2);
+    box-shadow:var(--shadow-dark); 
+    min-height: 50rem;
+}
+
+.header{
+    font-size: 1.4rem;
+    height: 7rem;
+    background-color:#fff;
+    border-bottom: var(--color-grey-light-2);
+    display: flex;
+    /* divide the empry space between these element  */
+    justify-content:space-between;
+    /* align on the cross axis */
+    align-items: center;
+}
+/* this is our flex container */
+.content{
+    display: flex;
+}
+
+/* flex item */
+.sidebar{
+    background-color: var(--color-grey-dark-1);
+    /*grow shrink bases/width  */
+    flex: 0 0 18%;
+}
+
+/* flex item */
+
+.hotel-view{
+    background-color:orangered;
+    /* by using flex:1 were saying the element can grow as nuch as it can */
+    flex:1;
+}

@@ -1,0 +1,45 @@
+
+/* by putting the variables here,we can use them at any place in the project */
+:root{
+    --color--Primary: #eb2f64;
+    --color-Primary-light: #FF3366;
+    --color-Primary-dark: #BA265D;
+    
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+    --shadow-dark::0 2rem 6rem rgba(0,0,0,.3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,::after,*::before{
+    box-sizing: inherit;
+}
+html{
+    //The width and height properties (and min/max properties) includes content, padding and border
+    box-sizing: border-box;
+    font-size: 62.5%;//1rem = 10px,10px/16px=62.5%
+}
+body{
+    font-family: 'open Sans',sans-serif;
+    font-weight: 400;
+    line-height:1.6;//the height of a line
+    color: var(--color-Grey-dark-2);
+    background-image: linear-gradient(to right bottom ,var(--color-Primary-light), var(--color-Primary-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* making the body 100% of the veiw port */
+    min-height: 100vh;
+    
+                                        
+}
