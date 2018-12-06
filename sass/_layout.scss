@@ -28,12 +28,16 @@
     background-color: var(--color-grey-dark-1);
     /*grow shrink bases/width  */
     flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* flex item */
 
 .hotel-view{
     background-color:orangered;
-    /* by using flex:1 were saying the element can grow as nuch as it can */
+    /* by using flex:1 were saying the element can grow as much as it can */
     flex:1;
+    height: 80rem;
 }
