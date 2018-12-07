@@ -5,6 +5,11 @@
     background-color: var(--color-grey-light-2);
     box-shadow:var(--shadow-dark); 
     min-height: 50rem;
+
+    @media only screen and (max-width:$bp-largest){
+        margin: 0;//disabling the margin of the conrainer
+        max-width: 100%;
+    } 
 }
 
 .header{
@@ -17,10 +22,21 @@
     justify-content:space-between;
     /* align on the cross axis */
     align-items: center;
+
+    @media only screen and (max-width:$bp-xsmall){
+        flex-wrap:wrap; 
+        align-content: space-around;
+        height:11rem;
+    }
+
 }
 /* this is our flex container */
 .content{
     display: flex;
+
+    @media only screen and (max-width:$bp-medium){
+       flex-direction: column; 
+    } 
 }
 
 /* flex item */
@@ -50,6 +66,16 @@
     padding: 4.5rem;
     background-color: var(--color-grey-light-1);
     border-bottom: var(--line);
+
+    @media only screen and (max-width:$bp-medium){
+       padding: 3rem; 
+    }
+
+    @media only screen and (max-width:$bp-small){
+        flex-direction: column;
+    }
+
+
 }
  
 .description{
@@ -58,6 +84,18 @@
     flex:0 0 60%;
     margin-right: 4.5rem;
     padding: 3rem;
+
+    @media only screen and (max-width:$bp-medium){
+        padding: 2rem;
+        margin-right: 3rem;
+
+    }
+
+    
+    @media only screen and (max-width:$bp-small){
+        margin-right:0; 
+        margin-bottom:3rem ;
+    }
  } 
 
 .user-reviews{

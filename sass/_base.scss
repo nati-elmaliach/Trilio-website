@@ -19,6 +19,15 @@
     --line:1px solid var(--color-grey-light-2);
 }
 
+
+/* media query variabls */
+$bp-largest:75em;     // 1200px / 16 =75
+$bp-large:68.75em;    // 1100px / 16 = 68.75
+$bp-medium:56.25em;   //900px / 16 = 56.25
+$bp-small:37.5em;     //600px / 16 = 37.5
+$bp-xsmall:31.25em;   //500px /16 = 31.25
+
+
 *{
     margin: 0;
     padding: 0;
@@ -31,6 +40,11 @@ html{
     //The width and height properties (and min/max properties) includes content, padding and border
     box-sizing: border-box;
     font-size: 62.5%;//1rem = 10px,10px/16px=62.5%
+
+    @media only screen and (max-width: $bp-large){
+        font-size: 50%;
+        
+    }
 }
 body{
     font-family: 'open Sans',sans-serif;
